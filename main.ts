@@ -10,7 +10,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     info.changeLifeBy(-1)
 })
 info.onCountdownEnd(function () {
-    if (14 < info.score()) {
+    if (8 <= info.score()) {
         game.over(true)
     } else {
         game.over(false)
